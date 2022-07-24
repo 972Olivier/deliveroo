@@ -43,6 +43,8 @@ function App() {
                   <h2>{element.name}</h2>
                   <div className="underH2">
                     {element.meals.map((element, index) => {
+                      element.number = 1;
+                      console.log(element);
                       return (
                         <div className="box">
                           <div
@@ -86,7 +88,8 @@ function App() {
 
             <div className="order">
               {basket.map((element, index) => {
-                console.log(element);
+                // element.number = index;
+                // console.log(element);
                 return (
                   <div className="choice" key={index}>
                     <button
@@ -101,7 +104,7 @@ function App() {
                       -
                     </button>
 
-                    <span>{basket.length}</span>
+                    <span>{element.number + index}</span>
 
                     <button
                       onClick={() => {
