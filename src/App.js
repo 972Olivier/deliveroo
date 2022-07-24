@@ -85,6 +85,7 @@ function App() {
             })}
           </div>
           {/* -----------------------------------------basket------------------------- */}
+
           <div className="basket">
             <button type="text">Valider mon panier</button>
 
@@ -113,11 +114,6 @@ function App() {
                         const copy = [...basket];
                         copy.push(element);
                         setBasket(copy);
-
-                        // alert("cest le plus");
-                        // element.price = (element.price * copy.length).toFixed(
-                        //   2
-                        // );
                       }}
                     >
                       +
@@ -132,10 +128,13 @@ function App() {
                 );
               })}
             </div>
-            {/* pour l'affichage du panier vide à gérer plus tard avec condition... */}
-            <div className="emptyBasket">
-              <p>Votre panier est vide</p>
-            </div>
+
+            {/* pour l'affichage du panier vide  */}
+            {basket.length < 1 && (
+              <div className="emptyBasket">
+                <p>Votre panier est vide</p>
+              </div>
+            )}
           </div>
         </section>
       </main>
