@@ -28,8 +28,10 @@ header {
 }
 /*----------------------main----------------*/
 main {
-  margin: 0 auto;
-  width: 1204px;
+  background-color: #f3f5f5;
+}
+.underMain {
+  background-color: white;
 }
 h1 {
   font-size: 32px;
@@ -67,8 +69,11 @@ h2 {
   border-radius: 5px;
 }
 section {
+  margin: 0 auto;
   /* border: solid 1px black; */
-  background-color: #f3f5f5;
+  width: 1230px;
+  border: solid black 1px;
+  display: flex;
 }
 .contain {
   /* border: #2e3333 solid 1px; */
@@ -142,4 +147,46 @@ h3 {
 .box .popular {
   color: #f68208;
   margin-left: 10px;
+}
+.basket {
+  margin-top: 30px;
+  background-color: white;
+  /* width: 350px; */
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.basket button {
+  width: 330px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #bac3c3;
+}
+.choice {
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 330px;
+}
+.choice button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 10px;
+  font-size: 15px;
+}
+.orderDescription {
+  /* border: solid 1px black; */
+  width: 150px;
+  padding-left: 10px;
+}
+.wrapTitlePrice {
+  display: flex;
 }
